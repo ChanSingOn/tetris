@@ -676,7 +676,7 @@
                         // 使用数学公式直接计算新等级，避免循环导致的跳级
                         const newLevel = Math.min(
                             MAX_LEVEL,
-                            1 + Math.floor(score / LEVEL_SCORE_BASE)
+                            1 + Math.floor(score / (LEVEL_SCORE_BASE + (level - 1) * LEVEL_SCORE_MULTIPLIER))
                         );
                         
                         if (newLevel > level) {
