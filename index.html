@@ -258,7 +258,7 @@
     <div class="w-full max-w-xs mt-4 text-center text-xs opacity-70">
         <p>陈省安制作</p>
         <br>
-        <p>像素俄罗斯方块 &copy;  2025丨1.4.8</p>
+        <p>像素俄罗斯方块 &copy;  2025丨1.4.9</p>
     </div>
 
     <script>
@@ -864,9 +864,9 @@
         // 显示游戏开始界面
         function showStartScreen() {
             startScreen.classList.remove('hidden');
-            // 根据设备类型更新操作说明，移除上滑旋转方块的说明
+            // 根据设备类型更新操作说明
             if (isMobile()) {
-                startInstructions.innerHTML = '滑动屏幕控制方块移动<br>向下滑动：加速下落';
+                startInstructions.innerHTML = '滑动屏幕控制方块移动<br>点击屏幕：旋转方块<br>向下滑动：加速下落';
             } else {
                 startInstructions.innerHTML = '使用方向键控制方块移动<br>上键：旋转方块<br>空格键：快速下落<br>P键：暂停游戏';
             }
